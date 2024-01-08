@@ -113,10 +113,10 @@ namespace BossMod.Endwalker.Savage.P12S2PallasAthena
         {
             var column = (IconID)iconID switch
             {
-                IconID.ClassicalConceptsCross => 0, // B
-                IconID.ClassicalConceptsSquare => 1, // P
-                IconID.ClassicalConceptsCircle => 2, // O
-                IconID.ClassicalConceptsTriangle => 3, // G
+                IconID.ClassicalConceptsCircle => 0, // O
+                IconID.ClassicalConceptsCross => 1, // X
+                IconID.ClassicalConceptsTriangle => 2, // ^ 
+                IconID.ClassicalConceptsSquare => 3, // []
                 _ => -1
             };
             if (column >= 0 && module.Raid.FindSlot(actor.InstanceID) is var slot && slot >= 0)
